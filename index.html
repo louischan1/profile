@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>个人简历</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <main class="resume">
@@ -20,7 +20,7 @@
       <section class="section">
         <h2>个人简介</h2>
         <p>
-          掌握c++,python 编程 ，具备5年3d视觉算法研发经验(nerf, sfm 方向) ， 在自动驾驶领域3年三年工作经验(主要工作为 众包建图，端到端智驾研究)，一年人形机器人算法经验（主要工作为 机器人标定， vla 算法研发）
+          掌握c++,python 编程 ，具备5年3d视觉算法研发经验(nerf, sfm 方向) ， 在自动驾驶领域3年三年工作经验(主要工作为 众包建图，端到端智驾研究)，一年人形机器人算法经验（主要工作为 机器人标定,力控算法， vla 算法研发）
           
         </p>
       </section>
@@ -44,8 +44,8 @@
             <span>2025.11 - 至今</span>
           </div>
           <ul>
-            <li>参与人形机器人具身算法研究</li>
-            <li>完成家庭场景机器人执行各项任务开发，落地awe，机器人大会展示</li>
+            <li>参与机器人vla算法研发，柔顺控制算法研发，以及本体标定</li>
+            <li>完成家庭场景机器人执行各项任务开发，落地awe，wrc展示</li>
           </ul>
           <div class="entry__header">
             <h3>极氪汽车</h3>
@@ -75,8 +75,9 @@
             <span>HTML · CSS · JavaScript</span>
           </div>
           <ul>
-            <li>完成基于vla 具身算法架构搭建，调优，</li>
-            <li>算法框架，本人参与的研发工作见附件1</li>
+            <li>手眼标定，关节零位标定算法开发</li>
+            <li>柔顺控制算法开发</li>
+            <li>vla 算法研发和调优</li>
           </ul>
           <div class="case-videos" aria-label="落地 case 视频">
             <h4>落地 case 视频如下</h4>
@@ -87,14 +88,75 @@
       </section>
 
       <section class="section">
-        <h2>媒体材料</h2>
+        <h2>极氪汽车</h2>
         <div class="media-block">
           <div>
-            <h3>作品图片</h3>
-            <p>
-              可在这里列出作品图片链接或项目截图说明。若需要展示图片，可将图片放入
-              <code>assets/</code> 目录，并在此处添加图片标签。
-            </p>
+            <h3>车位到车位-泊车场景云端建图</h3>
+            <li>基于车端传感器融合定位</li>
+            <li>云端多趟采集数据定位对齐</li>
+            <li>泊车场景要素重建</li>
+            <img
+              src="d2d_map.png"
+              alt="车位到车位泊车场景云端建图项目展示"
+              style="display: block; max-width: 100%; height: auto;"
+              loading="lazy"
+            />
+          </div>
+
+          <div>
+            <h3>众包建图-高精地图</h3>
+            <li>从0到1 搭建众包建图流程</li>
+            <li>设计并落地采集数据定位 + 重建方案</li>
+            <div class="map-images">
+              <img
+                src="hd1.png"
+                alt="众包建图高精地图项目展示图一"
+                loading="lazy"
+              />
+              <img
+                src="hd2.png"
+                alt="众包建图高精地图项目展示图二"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div>
+            <h3>端到端智驾预研</h3>
+            <li>基于3dgs 大规模街景渲染，产生仿真数据</li>
+            <li>优化端到端模型中决策不确定性问题</li>
+            <div class="driving-videos" aria-label="端到端智驾项目视频">
+              <video controls playsinline preload="metadata" aria-label="端到端智驾演示视频一">
+                <source src="collision1.mp4" type="video/mp4" />
+                您的浏览器不支持视频播放。
+              </video>
+              <video controls playsinline preload="metadata" aria-label="端到端智驾演示视频二">
+                <source src="collision2.mp4" type="video/mp4" />
+                您的浏览器不支持视频播放。
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>易车网</h2>
+        <div class="media-block">
+          <div>
+            <h3>3D 看车</h3>
+
+            <li>基于少量图像，完成3d 环绕视角渲染</li>
+            <div class="map-images" aria-label="3D 看车项目动图">
+              <img
+                src="1789483213662.gif"
+                alt="3D 看车项目演示动图一"
+                loading="lazy"
+              />
+              <img
+                src="1789483258613.gif"
+                alt="3D 看车项目演示动图二"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -109,7 +171,7 @@
         </ul>
       </section>
     </main>
-    <script src="case-videos.js"></script>
+    <script src="case-videos.js?v=20260915"></script>
   </body>
 </html>
 

@@ -2,7 +2,7 @@ const caseVideos = [
   {
     title: "剥香蕉任务1",
     description: "展示机器人识别并抓取香蕉的任务执行效果。",
-    src: "banana1_1.5x_silent.mp4",
+    src: "banana1_1.5x_silent_trimmed.mp4",
   },
   {
     title: "剥香蕉任务2",

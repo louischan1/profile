@@ -181,6 +181,32 @@ li {
   gap: 14px;
 }
 
+.map-images,
+.driving-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 640px;
+  margin-top: 12px;
+}
+
+.map-images > img {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+}
+
+.driving-videos > video {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
 .video-card {
   min-width: 0;
 }
