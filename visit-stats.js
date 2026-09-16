@@ -1,7 +1,6 @@
 (() => {
-  // 填入注册后的公开站点地址，例如 https://your-site.goatcounter.com
   // GoatCounter 站点时区须设置为 Asia/Shanghai，并开启网站访客计数功能。
-  const statsSite = "";
+  const statsSite = "https://louistsang.goatcounter.com";
   const pagePath = location.pathname.replace(/index\.html$/, "");
 
   if (statsSite && location.protocol !== "file:") {
